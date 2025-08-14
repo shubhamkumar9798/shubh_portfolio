@@ -4,7 +4,7 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import IntroLoader from "@/components/IntroLoader";
 import Hero from "@/components/hero";
-import ThemeToggleButton from "@/components/ui/theme-toggle-button";
+
 import AboutMeCard from "@/components/about"
 import {TextScroll} from "@/components/ui/text-scroll"
 import {SkiperCard} from "@/components/ui/skiper-card"

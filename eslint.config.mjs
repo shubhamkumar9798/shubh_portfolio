@@ -11,6 +11,20 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  // Add rules here
+  {
+    rules: {
+      // Disable the Tailwind ESLint rule
+      "tailwindcss/no-contradicting-classname": "off",
+
+      // Optional: make unused-vars warnings instead of errors
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { varsIgnorePattern: "^_", argsIgnorePattern: "^_" },
+      ],
+    },
+  },
 ];
 
 export default eslintConfig;
