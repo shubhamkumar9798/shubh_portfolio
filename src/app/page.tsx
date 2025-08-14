@@ -10,10 +10,18 @@ import {TextScroll} from "@/components/ui/text-scroll"
 import {SkiperCard} from "@/components/ui/skiper-card"
 import Flip from "@/components/proj"
 import Footer from "@/components/footer"
+import { CardCarousel } from "@/components/ui/card-carousel"
+import Achieve from "@/components/achieve";
 
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+
+  const images = [
+    { src: "/pro1.png", alt: "Image 1" },
+    { src: "/pro2.png", alt: "Image 2" },
+    { src: "/pro3.png", alt: "Image 3" },
+  ]
 
   return (
     <>
@@ -35,12 +43,21 @@ export default function Home() {
     url="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWI1ZmNvMGZyemhpN3VsdWp4azYzcWUxcXIzNGF0enp0eW1ybjF0ZyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Fa6uUw8jgJHFVS6x1t/giphy.gif"
   /> */}
   
-{/* </div> */}
+
 <AboutMeCard/>
             <TextScroll text="PROJECTS" />
-            <SkiperCard image = ""/>
+
+{/* Full-width Card Carousel wrapper */}
+  <div className="w-full px-4">
+    <CardCarousel
+      images={images}
+      autoplayDelay={2000}
+      showPagination={true}
+      showNavigation={true}
+    />
+  </div>
             <TextScroll text="ACHIEVEMENTS" />
-            <SkiperCard image = ""/>
+              <Achieve/>
             <Flip/>
             <Footer/>
         </main>
