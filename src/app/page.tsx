@@ -7,7 +7,7 @@ import Hero from "@/components/hero";
 
 import AboutMeCard from "@/components/about"
 import {TextScroll} from "@/components/ui/text-scroll"
-import {SkiperCard} from "@/components/ui/skiper-card"
+
 import Flip from "@/components/proj"
 import Footer from "@/components/footer"
 import { CardCarousel } from "@/components/ui/card-carousel"
