@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Main Content */}
       {!loading && (
-        <main className="min-h-screen flex flex-col justify-center items-center pt-5 relative">
+        <main className="min-h-screen flex flex-col justify-center items-center  relative">
           {/* Hero Section with contact form */}
           <Hero />
 

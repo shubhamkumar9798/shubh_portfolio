@@ -7,7 +7,7 @@ export default function Flip() {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center text-center px-[15px] py-[20px] bg-gradient-to-b from-gray-100 via-gray-200 to-gray-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 transition-colors duration-500">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-[url('/about-bg.jpg')] bg-cover bg-center opacity-20 dark:opacity-10"></div>
+      {/* <div className="absolute inset-0 bg-[url('/about-bg.jpg')]  bg-cover bg-center opacity-20 dark:opacity-10"></div> */}
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col gap-8 w-full max-w-6xl">
