@@ -111,10 +111,7 @@ export const TextScroll: React.FC<TextScrollProps> = ({
 
   return (
     <section
-      className="relative w-full py-4 bg-gradient-to-b 
-        from-gray-100 via-gray-200 to-gray-300 
-        dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 
-        transition-colors duration-500"
+      className="relative w-full py-4 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 transition-colors duration-500"
     >
       <ParallaxText baseVelocity={default_velocity} className={className}>
         {text}
