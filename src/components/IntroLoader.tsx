@@ -8,9 +8,6 @@ const greetings = [
   "नमस्ते",
   "Hola",
   "Bonjour",
-  // "こんにちは",
-  
-  "Ciao",
 ];
 
 export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
@@ -35,9 +32,7 @@ export default function IntroLoader({ onFinish }: { onFinish: () => void }) {
   return (
     <motion.div
       className="fixed inset-0 flex items-center justify-center
-                 bg-gradient-to-b from-gray-100 via-gray-200 to-gray-300
-                 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700
-                 transition-colors text-gray-800 dark:text-gray-200 z-[9999]"
+                 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 transition-colors text-gray-800 dark:text-gray-200 z-[9999]"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
